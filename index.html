@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nike React</title>
+  <!--tailwindcss -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!--fontawesome -->
+  <script src="https://kit.fontawesome.com/35edcfe896.js" crossorigin="anonymous"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <!--navbar -->
+  <header class="bg-[#FFF9F4]">
+    <nav class="flex justify-between pt-8 px-5 items-center container mx-auto">
+      <div class=" flex items-center gap-1">
+        <a href=""><img src="icons/Frame.png" alt="" class="w-14"></a>
+        <span class="text-2xl font-bold text-[#FA804C]">Penguin</span>
+        <span class="text-2xl font-bold text-[#363958]">Fashion</span>
+      </div>
+      <div>
+        <ul class="md:flex hidden items-center gap-10 me-20">
+          <li><a class="font-semibold hover:text-gray-600" href="#">Home</a></li>
+          <li><a class="font-semibold hover:text-gray-600" href="#">Product</a></li>
+          <li><a class="font-semibold hover:text-gray-600" href="#">About Us</a></li>
+          <li><a class="font-semibold hover:text-gray-600" href="#">Contact us</a></li>
+        </ul>
+      </div>
+      <!--mobile-menu-button -->
+      <div class="md:hidden">
+        <button id="mobile-Menu-Button" class="text-2xl">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+      <!--mobile-menu -->
+    </nav>
+    <div id="mobile-Menu" class="md:hidden hidden">
+      <ul class="flex flex-col items-start ms-5 py-5 gap-5 me-10">
+        <li><a class="font-semibold hover:text-gray-600" href="#">Home</a></li>
+        <li><a class="font-semibold hover:text-gray-600" href="#">Product</a></li>
+        <li><a class="font-semibold hover:text-gray-600" href="#">About Us</a></li>
+        <li><a class="font-semibold hover:text-gray-600" href="#">Contact us</a></li>
+      </ul>
+    </div>
+  </header>
+  <!--top-banar -->
+  <main>
+    <section class="bg-[#FFF9F4]">
+      <div class="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center">
+        <div class="max-w-md">
+          <img src="images/Group 33092.png" class="" alt="">
+        </div>
+        <div
+          class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+          <div class="uppercase">
+            <span class="text-6xl font-bold text-[#FA804C]">Nike React </span><br>
+            <span class="text-6xl font-bold text-[#363958]">Infinity Run 2</span>
+          </div>
+          <p class="text-gray-500 text-lg">Lorem Ipsum is simply dummy text of the printing
+            and typesetting industry.</p>
+          <button type="button"
+            class="text-white bg-blue-500 py-4 px-5 rounded-md font-semibold hover:text-white hover:bg-blue-800 mt-5 transition-all duration-700 ">
+            <i class="fa-solid fa-cart-shopping"></i> BUY NOW</button>
+        </div>
+      </div>
+    </section>
+    <!--Formal shoes -->
+    <section class="container mx-auto py-14">
+      <h1 class="font-bold text-5xl uppercase text-gray-800"> Formal shoes</h1>
+      <div class="grid md:col-span-3 gap-3">
+        <div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <!--script link -->
+  <script src="app.js"></script>
+
+</body>
+
+</html>

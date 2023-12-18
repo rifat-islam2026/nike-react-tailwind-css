@@ -16,6 +16,10 @@
         extend: {
           colors: {
             clifford: '#da373d',
+            MainBG: '#FFF9F4',
+            CustomFontColor1: '#FA804C',
+            CustomFontColor2: '#363958',
+            CardBG: '#F1F1F1',
           }
         }
       }
@@ -25,12 +29,12 @@
 
 <body>
   <!--navbar -->
-  <header class="bg-[#FFF9F4]">
+  <header class="bg-MainBG">
     <nav class="flex justify-between pt-8 px-5 items-center container mx-auto">
       <div class=" flex items-center gap-1">
         <a href=""><img src="icons/Frame.png" alt="" class="w-14"></a>
-        <span class="text-2xl font-bold text-[#FA804C]">Penguin</span>
-        <span class="text-2xl font-bold text-[#363958]">Fashion</span>
+        <span class="text-2xl font-bold text-CustomFontColor1">Penguin</span>
+        <span class="text-2xl font-bold text-CustomFontColor2">Fashion</span>
       </div>
       <div>
         <ul class="md:flex hidden items-center gap-10 me-20">
@@ -59,7 +63,7 @@
   </header>
   <!--top-banar -->
   <main>
-    <section class="bg-[#FFF9F4]">
+    <section class="bg-MainBG">
       <div class="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center">
         <div class="max-w-md">
           <img src="images/Group 33092.png" class="" alt="">
@@ -67,8 +71,8 @@
         <div
           class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
           <div class="uppercase">
-            <span class="text-6xl font-bold text-[#FA804C]">Nike React </span><br>
-            <span class="text-6xl font-bold text-[#363958]">Infinity Run 2</span>
+            <span class="text-6xl font-bold text-CustomFontColor1">Nike React </span><br>
+            <span class="text-6xl font-bold text-CustomFontColor2">Infinity Run 2</span>
           </div>
           <p class="text-gray-500 text-lg">Lorem Ipsum is simply dummy text of the printing
             and typesetting industry.</p>
@@ -78,12 +82,122 @@
         </div>
       </div>
     </section>
-    <!--Formal shoes -->
+    <!--CASUAL SHOES -->
     <section class="container mx-auto py-14">
-      <h1 class="font-bold text-5xl uppercase text-gray-800"> Formal shoes</h1>
-      <div class="grid md:col-span-3 gap-3">
-        <div>
+      <h1 class="font-bold text-5xl py-10 uppercase md:text-start text-center text-CustomFontColor2"> Casual backpack
+      </h1>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
+        <div class="bg-white p-5 rounded-lg shadow-lg ">
+          <div class=" bg-CardBG rounded-lg shadow-lg"><img src="images/image 5.png" class="w-full" alt=""></div>
+          <h3 class="text-2xl font-bold text-CustomFontColor2 py-4">Nike Shoe</h3>
+          <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, asperiores.</p>
+          <div class="flex py-3 justify-between items-center">
+            <h2 class="font-semibold text-4xl text-CustomFontColor1">$234</h2>
+            <button type="button"
+              class="text-white bg-blue-500 py-4 px-5 rounded-md font-semibold hover:text-white hover:bg-blue-800 transition-all duration-700 ">
+              <i class="fa-solid fa-cart-shopping"></i> BUY NOW</button>
+          </div>
+        </div>
 
+        <div class="bg-white p-5 rounded-lg shadow-lg ">
+          <div class=" bg-CardBG rounded-lg shadow-lg"><img src="images/Daco_1703273 1.png" class="w-full" alt=""></div>
+          <h3 class="text-2xl font-bold text-CustomFontColor2 py-4">Sneakers Skate Shoe </h3>
+          <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, asperiores.</p>
+          <div class="flex py-3 justify-between items-center">
+            <h2 class="font-semibold text-4xl text-CustomFontColor1">$234</h2>
+            <button type="button"
+              class="text-white bg-blue-500 py-4 px-5 rounded-md font-semibold hover:text-white hover:bg-blue-800 transition-all duration-700 ">
+              <i class="fa-solid fa-cart-shopping"></i> BUY NOW</button>
+          </div>
+        </div>
+
+        <div class="bg-white p-5 rounded-lg shadow-lg ">
+          <div class=" bg-CardBG rounded-lg shadow-lg "><img src="images/pngegg 1.png" class="" alt=""></div>
+          <h3 class="text-2xl font-bold text-CustomFontColor2 py-4">Sneakers Basketball shoe</h3>
+          <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, asperiores.</p>
+          <div class="flex py-3 justify-between items-center">
+            <h2 class="font-semibold text-4xl text-CustomFontColor1">$234</h2>
+            <button type="button"
+              class="text-white bg-blue-500 py-4 px-5 rounded-md font-semibold hover:text-white hover:bg-blue-800 transition-all duration-700 ">
+              <i class="fa-solid fa-cart-shopping"></i> BUY NOW</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Formal shoes -->
+    <section class="container mx-auto py-14 mb-28">
+      <h1 class="font-bold text-5xl py-10 uppercase md:text-start text-center text-CustomFontColor2">Formal shoes</h1>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
+        <div class="bg-white p-5 rounded-lg shadow-lg ">
+          <div class="rounded-lg shadow-lg"><img src="images/Mask Group.png" class="w-full" alt=""></div>
+          <h3 class="text-2xl font-bold text-CustomFontColor2 py-4">Prestige High-Cut Leather </h3>
+          <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, asperiores.</p>
+          <div class="flex py-3 justify-between items-center">
+            <h2 class="font-semibold text-4xl text-CustomFontColor1">$234</h2>
+            <button type="button"
+              class="text-white bg-blue-500 py-4 px-5 rounded-md font-semibold hover:text-white hover:bg-blue-800 transition-all duration-700 ">
+              <i class="fa-solid fa-cart-shopping"></i> BUY NOW</button>
+          </div>
+        </div>
+
+        <div class="bg-white p-5 rounded-lg shadow-lg ">
+          <div class=" rounded-lg shadow-lg"><img src="images/Rectangle 38.png" class="w-full" alt=""></div>
+          <h3 class="text-2xl font-bold text-CustomFontColor2 py-4">Slip-On Formal Shoe</h3>
+          <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, asperiores.</p>
+          <div class="flex py-3 justify-between items-center">
+            <h2 class="font-semibold text-4xl text-CustomFontColor1">$234</h2>
+            <button type="button"
+              class="text-white bg-blue-500 py-4 px-5 rounded-md font-semibold hover:text-white hover:bg-blue-800 transition-all duration-700 ">
+              <i class="fa-solid fa-cart-shopping"></i> BUY NOW</button>
+          </div>
+        </div>
+
+        <div class="bg-white p-5 rounded-lg shadow-lg ">
+          <div class=" rounded-lg shadow-lg "><img src="images/Rectangle 39.png" class="" alt=""></div>
+          <h3 class="text-2xl font-bold text-CustomFontColor2 py-4">Slip-On Formal Shoe</h3>
+          <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, asperiores.</p>
+          <div class="flex py-3 justify-between items-center">
+            <h2 class="font-semibold text-4xl text-CustomFontColor1">$234</h2>
+            <button type="button"
+              class="text-white bg-blue-500 py-4 px-5 rounded-md font-semibold hover:text-white hover:bg-blue-800 transition-all duration-700 ">
+              <i class="fa-solid fa-cart-shopping"></i> BUY NOW</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Our Benifit -->
+    <section class="container mx-auto pb-20">
+      <div class="grid lg:grid-cols-2 md:grid-cols-1 gap-8">
+
+        <div class="shadow-lg order-1 flex gap-2  p-5 items-center bg-white">
+          <img src="icons/image 12.png" class="h-20 w-20 " alt="">
+          <div>
+            <h4 class="text-2xl text-CustomFontColor2 font-bold">Find the Perfect Fit</h4>
+            <p class="text-slate-500">Everybody is different, which is why we offer styles for every body.</p>
+          </div>
+        </div>
+        <div class=" row-span-3 lg:order-2 py-5">
+          <img src="icons/XMLID 1.png" alt="">
+        </div>
+
+        <div class="shadow-lg order-3 flex gap-2 p-5 items-center bg-white">
+          <img src="icons/image 13.png" class="h-20 w-20" alt="">
+          <div>
+            <h4 class="text-2xl text-CustomFontColor2 font-bold">Free Exchanges</h4>
+            <p class="text-slate-500">
+              One of the many reasons you can shop
+              with peace of mind.
+            </p>
+          </div>
+        </div>
+
+        <div class="shadow-lg order-4 flex gap-2 p-5 items-center bg-white">
+          <img src="icons/image 14.png" class="h-20 w-20" alt="">
+          <div>
+            <h4 class="text-2xl text-CustomFontColor2 font-bold">Contact Our Seller</h4>
+         <p class="text-slate-500">They are here to help you. That's quite 
+          literally what we pay them for.</p>
+          </div>
         </div>
       </div>
     </section>
